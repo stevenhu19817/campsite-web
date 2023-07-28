@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+/* 
+html {
+    background: bisque;
+    bottom: 350px;
+    padding-left: 350px;
+    height: 100%;
+}
+ */
+ 
+ :root {
+
+  overflow-x: hidden;
+}
+ 
+ body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+/* 這是sidebar */
+
+.container_1 {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: rgb(228, 167, 107);
+    z-index: 99;
+}
+
+.container_1 .sidebar {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    background: rgb(228, 167, 107);
+}
+
+.sidebar .title {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(228, 167, 107);
+}
+
+.sidebar .min_picture {
+    text-align: left;
+    background: url(../img/LOGO.png)no-repeat left bottom;
+    background-size: 100px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    /* display: inline-block; */
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.container_1 nav ul {
+    background: rgb(228, 167, 107);
+    /* height: 100%; */
+    width: 250px;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 800;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    background: black;
+    border-left-color: cyan;
+}
+
+nav ul ul {
+    position: static;
+    display: none;
+}
+
+nav ul .feat-show.show {
+    display: block;
+}
+
+nav ul .serv-show.show1 {
+    display: block;
+}
+
+nav ul .bom-show.show2 {
+    display: block;
+}
+
+nav ul .mky-show.show3 {
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 40px;
+}
+
+nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transfrom 0.4s;
+}
+
+nav ul li a:hover span {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.rightside {
+    /* width: 84.5vw; */
+    /* height: 100vh; */
+    background-color: bisque;
+    /* display: flex; */
+}
+
+
+/* 這是右邊文字 */
+
+h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 65px;
+    text-align: center;
+    background: rgb(228, 167, 107);
+    letter-spacing: 1px;
+    width: 150px;
+    /* display: inline-block; */
+}
+
+
+
+/* @media (min-width: 480px) {
+    .rwd-table td:before {
+        display: none;
+    }
+    .rwd-table th,
+    .rwd-table td {
+        display: table-cell;
+        padding: 0.25em 0.5em;
+    }
+    .rwd-table th:first-child,
+    .rwd-table td:first-child {
+        padding-left: 0;
+    }
+    .rwd-table th:last-child,
+    .rwd-table td:last-child {
+        padding-right: 0;
+    }
+    .rwd-table th,
+    .rwd-table td {
+        padding: 1em !important;
+    }
+} */
+/* 
+ul.pagination {
+    background: bisque;
+    padding-top: 20px;
+    z-index: -1;
+    padding: 0;
+} */
+
+.container{
+    max-width: 700px;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    margin-left: 400px;
+    width: calc(100% - 400px);
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 20px;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30PX;
+    background: linear-gradient(135deg, blanchedalmond, blanchedalmond); 
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 12px 0px;
+}
+ form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+  
+.user-details .input-box select{
+/*     height: 50px; */
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input :focus,
+.user-details .input-box input :valid{
+    background-color: #9b59b6;
+}
+form .gender-datails .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .puct-box .details{
+    display: flex;
+    width: 80%;
+margin: 10px 0;
+    justify-content: space-between;
+
+}
+
+
+.button{
+    border:0;
+    background-color:burlywood;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+}
+.button:hover{
+
+  color:burlywood;
+  background-color:#fff;
+  border:2px burlywood solid;
+
+}
+
+#preview {
+    border: 1px solid lightgray;
+    display: inline-block;
+    width: 250px;
+    min-height: 145px;
+    position: relative;
+    max-width: 100%;
+   
+}
+
+.br{
+    /* border: 1px dashed #ccc; */
+     margin: 4px;
+}
+#preview span.text {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: lightgray;
+}
+
+#preview img.preview_img {
+    width: 30%;
+}
+
+#picture{
+    display: none;
+}
+div.buttn{
+    /* border: 1px solid blue; */
+    width: 100px;
+    margin-left: 30rem;
+    display:flex;
+    
+}
+
+.outin{
+    border:0;
+    background-color:burlywood;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:30px;
+    /* position: relative;
+    bottom: 8px;
+    left: 350px; */
+}
+
+.outin:hover{
+    color:burlywood;
+    background-color:#fff;
+    border:2px burlywood solid;
+}
+
+.clear{
+    border:0;
+    background-color:burlywood;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    margin-right: 10px;
+    margin-top:30px;
+    /* position: relative;
+    top: 20px;
+    left: 500px;    */
+}
+
+.clear:hover{
+    color:burlywood;
+    background-color:#fff;
+    border:2px burlywood solid
+}
+#sit1{
+	padding: 0;
+	width: 30%; 
+}
+#btnlog{
+	margin-left: 50px;
+}

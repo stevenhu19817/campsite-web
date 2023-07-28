@@ -1,0 +1,21 @@
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		if ($("#account").val()) {
+			$("#login").addClass("d-none")
+			$("#register").addClass("d-none")
+			$("#accountName").removeClass("d-none")
+		} else {
+			$("#login").removeClass("d-none")
+			$("#register").removeClass("d-none")
+			$("#accountName").addClass("d-none")
+		}
+		if ($("#membership").val() == 0) {
+			$("#campManagement").addClass("d-none")
+		} else {
+			$("#campManagement").removeClass("d-none")
+		}
+	})
+</script>

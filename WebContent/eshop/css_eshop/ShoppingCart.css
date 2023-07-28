@@ -1,0 +1,128 @@
+html, body {
+	font: 15px verdana, Times New Roman, arial, helvetica, sans-serif,
+		Microsoft JhengHei;
+	background-color: rgb(243, 242, 239);
+}
+
+table#table-1 {
+	background-color: rgb(230, 239, 217);
+	border: 2px solid black;
+	text-align: center;
+}
+
+table {
+	width: 850px;
+	background-color: rgb(230, 239, 217);
+	margin-top: 1px;
+	margin-bottom: 2px;
+}
+
+table, th, td {
+	border: 0px solid rgb(230, 239, 217);
+	font-weight: bold;
+}
+
+tr:hover {
+	/* background-color: #CCCCFF; */
+	
+}
+
+th, td {
+	border: 1px solid rgb(230, 239, 217);
+	padding: 1px;
+	text-align: center;
+}
+
+form {
+	margin-bottom: 0px;
+}
+
+h3, h4 {
+	color: red;
+	display: inline;
+	margin-right: 5px;
+}
+
+a:visited, a:link {
+	display: inherit;
+	text-align: center;
+	color: blue;
+	font-weight: bold;
+}
+
+a:hover, a:active {
+	display: inherit;
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.button1 {
+	background-color: rgb(40, 64, 12);
+	color: rgb(255, 255, 255);
+	height: 36px;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	padding: 5px 5px;
+	border-radius: 24px;
+	width: 80px;
+	
+}
+
+.button1:hover {
+	background: rgb(0, 197, 133);
+}
+.button2 {
+	background-color: rgb(40, 64, 12);
+	color: rgb(255, 255, 255);
+	height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	padding: 5px 5px;
+	border-radius: 24px;
+	width: 80px;
+	position: relative;
+	left: 65%;
+	
+}
+
+.button2:hover {
+	background: rgb(0, 197, 133);
+}
+
+.buttonok {
+	background-color: rgb(40, 64, 12);
+	color: rgb(255, 255, 255);
+	height: 50px;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	padding: 5px 5px;
+	border-radius: 24px;
+	width: 80px;
+	position: relative;
+	left: 60%;
+}
+
+.buttonok:hover {
+	background: rgb(0, 197, 133);
+}
+#quick_fill_btn {
+	background-color: #804040;
+	color: rgb(255, 255, 255);
+	height: 36px;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	padding: 5px 5px;
+	border-radius: 24px;
+	width: 80px;
+	position: relative;
+	left: 60%;
+	transform: translatex(-30%);
+}
+#quick_fill_btn:hover {
+	background: red;
+}

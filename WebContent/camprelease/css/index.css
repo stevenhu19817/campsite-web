@@ -1,0 +1,106 @@
+@charset "BIG5";
+
+body{
+  background-color: #FFEEE1;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 40px;
+  font-family: arial;
+  margin: 30px;
+}
+
+.imgto{
+  position: relative;
+}
+
+.preview_box img {
+  padding: 0 22px;
+  width: 300px;
+}
+
+canvas{
+  height: 200px;
+  border-style: solid;
+  border-width: 3px;
+}
+
+imput{
+  font-size: 14pt;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      /* html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      } */
+      
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: "Roboto", "sans-serif";
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      .camp5{
+        margin-left: 15px !important;
+      }
+      .ws-nowrap{
+        white-space: nowrap;
+      }
+
+      /* 以下設備 */
+      .setting-label{
+        position: relative;
+        display: inline-block;
+        line-height: 1em;
+        overflow: hidden;
+        margin: 0 5px 5px 0;
+        cursor: pointer;
+      }
+      .setting-label > input{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+      }
+      .setting-label > span{
+        position: relative;
+        display: block;
+        padding: 10px 12px 10px 10px;
+        color: #000;
+        font-weight: 500;
+        background-color: lightgray;
+        /* white-space: nowrap;
+        border-radius: 2em; */
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+      }
+      .setting-label > span > i{
+        opacity: 1;
+      }
+      .setting-label:hover > span{
+        color:#fff;
+        background-color: #F4A249;
+      }
+      .setting-label:hover >span.male{
+        background-color: #F4A249;
+      }
+      .setting-label input:checked + span{
+        background-color: #f23557;
+        color: white;
+      }
