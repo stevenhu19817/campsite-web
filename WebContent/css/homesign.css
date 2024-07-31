@@ -1,0 +1,34 @@
+img {
+    height: 250px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.divform p {
+    margin: 0px auto;
+    width: 200px;
+    margin-top: 20px;
+    align:center;
+}
+
+.button {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button .button_submit {
+    position: relative;
+    right: 50px;
+}
+
+.button .button_clear {
+    position: relative;
+    left: 32px;
+}
+input .adminsubmit{
+	position:relative;
+	left:32px;
+}

@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	background-color: rgb(243, 242, 239);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: orange;
+	font-weight: bold;
+}
+a.shoppingcart:hover {
+	color: green;
+	font-weight: bold;
+}
+
+a.myorders:hover {
+	color: #2d2dff;
+	font-weight: bold;
+}
+
+.logoutfromeshop:hover {
+	color: red;
+	font-weight: bold;
+}
+
+/* 導覽列============================================================================================================= */
+nav.shopnav {
+	background-color: #fbefe7;
+	/*     border: 2px dotted red; */
+	width: 100%;
+	height: 100px;
+	position: sticky;
+	top: 0px;
+	/* position: fixed; */
+	/* top: 0px; */
+	/* left: 0px; */
+}
+
+nav.shopnav a.camppage {
+	/*     border: 1px solid black; */
+	display: inline-block;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+}
+
+nav.shopnav a.myorders {
+/* 	border: 1px solid black; */
+	display: inline-block;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 310px;
+}
+
+nav.shopnav a.shoppingcart {
+	/*     border: 1px solid black; */
+	display: inline-block;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	right:210px;
+}
+
+nav.shopnav a#errshow{
+	display: inline-block;
+	color:red;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 390px;
+}
+
+nav.shopnav a.loginfromeshop{
+	display: inline-block;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 110px;
+}
+
+nav.shopnav a.logoutfromeshop{
+	display: inline-block;
+	height: 100%;
+	line-height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+
+/* 商品類型輪播
+          ============================================================================================================= */
+div.top_main {
+	border: 1px solid light-gray;
+	width: 60%;
+	/*     height: 100%; */
+	height: 400px;
+	margin: 20px auto 30px auto;
+}
+
+div.top_main div.category {
+	/*     border: 1px solid yellow; */
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 100%;
+}
+
+div.top_main div.category ul.list {
+	list-style: none;
+	padding: 0;
+	/* border: 1px solid orange; */
+	height: 100%;
+}
+
+ul.list li {
+/* 	border: 1px solid black; */
+	margin-top: 30%;
+	font-size: 30px;
+}
+
+div.top_main div.slideshow {
+	/*     border: 1px solid black; */
+	background-image: url('../imgs/welcom2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	height: 100%;
+	width: calc(100% - 160px);
+	display: inline-block;
+}
+/* 快速選購商品區============================================================================================================= */
+div.middle_countainer {
+	/* border: 1px solid black; */
+	margin-left: 30px;
+}
+
+div h1 {
+	font-size: 35px;
+	color: RED;
+}
+/* ============================================================================================================= */
+div.container {
+	/*     border: 1px solid black; */
+	
+}
+
+/* div.container div.row { */
+/* border: 1px solid red; */
+/* } */
+div.container div.row div.col {
+	margin-top: 20px;
+}
+
+div.card-body h5.card-title {
+	/* font-size: 20px; */
+	text-align: center;
+}
+
+div.card-body p.card-text {
+	/* font-size: 20px; */
+	text-align: center;
+}
+
+div.card-body p.card-text span {
+	color: red;
+}
+
+div.card-body button.btn {
+	position: relative;
+	transform: translateX(70%);
+}

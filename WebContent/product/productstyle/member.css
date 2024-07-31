@@ -1,0 +1,345 @@
+    * {
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+    
+    html {
+        background: bisque;
+        /* bottom: 350px; */
+        padding-left: 350px;
+        height: 100%;
+    }
+    /* 這是sidebar */
+    
+    .container {
+        position: fixed;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: rgb(228, 167, 107);
+        z-index: 99;
+    }
+    
+    .container .sidebar {
+        width: 300px;
+        position: fixed;
+        left: 0;
+        background: rgb(228, 167, 107);
+    }
+    
+    .sidebar .title {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(228, 167, 107);
+    }
+    
+    .sidebar .min_picture {
+        text-align: left;
+        background: url(../img/LOGO.png)no-repeat left bottom;
+        background-size: 100px auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        /* display: inline-block; */
+        padding-left: 100px;
+        padding-top: 30px;
+    }
+    
+    .container nav ul {
+        background: rgb(228, 167, 107);
+        /* height: 100%; */
+        width: 250px;
+        list-style: none;
+    }
+    
+    nav ul li {
+        line-height: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    nav ul li a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding-left: 40px;
+        font-weight: 800;
+        display: block;
+        width: 100%;
+        border-left: 3px solid transparent;
+    }
+    
+    nav ul li a:hover {
+        color: cyan;
+        background: black;
+        border-left-color: cyan;
+    }
+    
+    nav ul ul {
+        position: static;
+        display: none;
+    }
+    
+    nav ul .feat-show.show {
+        display: block;
+    }
+    
+    nav ul .serv-show.show1 {
+        display: block;
+    }
+    
+    nav ul .bom-show.show2 {
+        display: block;
+    }
+    
+    nav ul .mky-show.show3 {
+        display: block;
+    }
+    
+    nav ul ul li {
+        line-height: 42px;
+        border-bottom: none;
+    }
+    
+    nav ul ul li a {
+        font-size: 17px;
+        color: #e6e6e6;
+        padding-left: 40px;
+    }
+    
+    nav ul li a span {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 22px;
+        transition: transfrom 0.4s;
+    }
+    
+    nav ul li a:hover span {
+        transform: translateY(-50%) rotate(-180deg);
+    }
+    
+    .rightside {
+        /* width: 84.5vw; */
+        /* height: 100vh; */
+        background-color: bisque;
+        /* display: flex; */
+    }
+    /* 這是右邊文字 */
+    
+    h1 {
+        color: white;
+        font-size: 35px;
+        font-weight: 1000;
+        line-height: 65px;
+        text-align: center;
+        background: rgb(228, 167, 107);
+        letter-spacing: 1px;
+        width: 150px;
+        /* display: inline-block; */
+    }
+    
+    h2 {
+        color: rgb(236, 18, 18);
+        font-size: 35px;
+        font-weight: 600;
+        /* line-height: 65px; */
+        letter-spacing: 1px;
+        /* width: 200px; */
+        /* float: left; */
+        margin: 0;
+        /* margin: border 0; */
+    }
+    
+    h3 {
+        /* position: fixed; */
+        color: rgb(236, 18, 18);
+        font-size: 24px;
+        font-weight: 600;
+        /* line-height: 65px; */
+        letter-spacing: 1px;
+        width: 200px;
+        margin: 0;
+        /* margin: border 0; */
+        display: inline-block;
+    }
+    /* 這是請選擇下拉式 */
+    
+    .dropdown {
+        /* position: fixed; */
+        /* margin: border 0; */
+        /* position: relative; */
+        /* top: 60px; */
+        /* right: 270px; */
+        display: inline-block;
+        margin-left: -4rem;
+        margin-top: 1rem;
+    }
+    /* 這是查詢按鈕 */
+    
+    .btn-outline-success {
+        position: fixed;
+        margin: 0;
+        position: relative;
+        left: 320px;
+    }
+    /* 這是表格 */
+    
+    .rwd-table {
+        background: #eee;
+        display: block;
+        padding-top: 100px;
+        overflow: hidden;
+        width: 900px;
+        /* padding-right: 26.5%; */
+        padding: 0;
+    }
+    
+    .rwd-table tr:nth-of-type(2n) {
+        background: #eee;
+    }
+    
+    .rwd-table th,
+    .rwd-table td {
+        margin: 0.5em 1em;
+    }
+    
+    .rwd-table th {
+        background: rgb(64, 223, 188);
+        display: none;
+    }
+    
+    .rwd-table td {
+        display: block;
+    }
+    
+    .rwd-table td:before {
+        content: attr(data-th) " : ";
+        font-weight: bold;
+        width: 7.5em;
+        display: inline-block;
+    }
+    
+    .rwd-table th,
+    .rwd-table td {
+        text-align: center;
+    }
+    
+    .rwd-table th,
+    .rwd-table td:before {
+        color: #fcf7f8;
+        font-weight: bold;
+    }
+    
+    @media (min-width: 480px) {
+        .rwd-table td:before {
+            display: none;
+        }
+        .rwd-table th,
+        .rwd-table td {
+            display: table-cell;
+            padding: 0.25em 0.5em;
+        }
+        .rwd-table th:first-child,
+        .rwd-table td:first-child {
+            padding-left: 0;
+        }
+        .rwd-table th:last-child,
+        .rwd-table td:last-child {
+            padding-right: 0;
+        }
+        .rwd-table th,
+        .rwd-table td {
+            padding: 1em !important;
+        }
+    }
+    
+    ul.pagination {
+        background: bisque;
+        padding-top: 20px;
+        z-index: -1;
+        padding: 0;
+    }
+    /* 這是搜尋 */
+    
+    .searcher {
+        height: 70px;
+        width: 800px;
+        margin: 70px 1300px 0 auto;
+    }
+    
+    .parent {
+        position: relative;
+    }
+    
+    .search {
+        width: 300px;
+        height: 40px;
+        border-radius: 18px;
+        outline: none;
+        border: 1px solid #ccc;
+        padding-left: 20px;
+        position: absolute;
+    }
+    
+    .btn_search {
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        background: url("images/topbar.png") no-repeat -2px -99px;
+        top: 6px;
+        left: 285px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #141414;
+        opacity: 0.7;
+        z-index: 1000;
+        display: none;
+    }
+    /* .-on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #141414;
+        opacity: 0.7;
+        z-index: 1000;
+       /* display: none; 
+    } */
+
+    /* .bg .-on{
+        display: none;
+
+    } */
+ 
+    
+    .pop {
+        position: fixed;
+        width: 600px;
+        height: 440px;
+        left: 50%;
+        top: 50%;
+        margin-left: -240px;
+        margin-top: -230px;
+        z-index: 1002;
+        background-color: powderblue;
+        display: none;
+    }
+    
+    .pop .formmember {
+        width: 300px;
+        /* text-align: center; */
+        margin: 0 auto;
+    }
